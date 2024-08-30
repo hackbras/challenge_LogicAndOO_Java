@@ -1,199 +1,199 @@
-# 📚 Curso de Lógica para Programação III
+# 📚 Logic for Programming III Course
 
-**Instrutor**: Marcio Michelluzzi
+**Instructor**: Marcio Michelluzzi
 
-## 📋 Lista de Exercícios - POO
+## 📋 Object-Oriented Programming (OOP) Exercise List
 
-### 1. 🧍‍♂️ Pessoa
-Crie uma classe para representar uma Pessoa com os atributos:
-- `nome` (privado)
-- `data de nascimento` (privado)
-- `altura` (privado)
+### 1. 🧍‍♂️ Person
+Create a class to represent a `Person` with the following attributes:
+- `name` (private)
+- `birth date` (private)
+- `height` (private)
 
-Métodos:
-- `getters e setters` para os atributos
-- `imprimir`: imprime todos os dados da pessoa
-- `calcularIdade`: calcula a idade da pessoa
+Methods:
+- `getters and setters` for the attributes
+- `printDetails`: prints all the person's details
+- `calculateAge`: calculates the person's age
 
-### 2. 💳 ContaCorrente
-Implemente uma classe `ContaCorrente` com os atributos:
-- `número da conta`
-- `nome do correntista`
-- `saldo` (opcional, valor default zero)
+### 2. 💳 BankAccount
+Implement a class `BankAccount` with the following attributes:
+- `account number`
+- `account holder's name`
+- `balance` (optional, default value is zero)
 
-Métodos:
-- `alterarNome`
-- `depósito`
-- `saque`
+Methods:
+- `changeName`
+- `deposit`
+- `withdraw`
 
-### 3. ⛽ BombaCombustivel
-Desenvolva uma classe `BombaCombustivel` com os atributos:
-- `tipo de combustível`
-- `valor por litro`
-- `quantidade de combustível`
+### 3. ⛽ FuelPump
+Develop a class `FuelPump` with the following attributes:
+- `fuel type`
+- `price per liter`
+- `fuel quantity`
 
-Métodos:
-- `abastecerPorValor`: informa a quantidade de litros
-- `abastecerPorLitro`: calcula o valor a ser pago
-- `alterarValor`: altera o valor do litro
-- `alterarCombustivel`: altera o tipo de combustível
-- `alterarQuantidadeCombustivel`: altera a quantidade de combustível
+Methods:
+- `refuelByValue`: informs the amount of liters for the given value
+- `refuelByLiters`: calculates the price for the given liters
+- `changePrice`: changes the price per liter
+- `changeFuelType`: changes the fuel type
+- `changeFuelQuantity`: changes the remaining fuel quantity
 
-### 4. 🏢 Elevador
-Crie uma classe `Elevador` com atributos:
-- `andar atual` (inicialmente térreo = 0)
-- `total de andares` (desconsiderando o térreo)
-- `capacidade do elevador`
-- `quantas pessoas estão presentes`
+### 4. 🏢 Elevator
+Create a class `Elevator` with the following attributes:
+- `current floor` (initially ground floor = 0)
+- `total floors` (excluding the ground floor)
+- `elevator capacity`
+- `number of people inside`
 
-Métodos:
-- `Inicializa`: recebe a capacidade e o total de andares
-- `Entra`: acrescenta uma pessoa (se houver espaço)
-- `Sai`: remove uma pessoa (se houver alguém)
-- `Sobe`: sobe um andar (se não for o último)
-- `Desce`: desce um andar (se não for o térreo)
+Methods:
+- `initialize`: receives capacity and total floors as parameters
+- `enter`: adds a person to the elevator (if there is space)
+- `exit`: removes a person from the elevator (if there is someone inside)
+- `goUp`: moves up one floor (if not already on the top floor)
+- `goDown`: moves down one floor (if not already on the ground floor)
 
-### 5. 🎓 Aluno
-Implemente uma classe `Aluno` com os atributos:
-- `matrícula`
-- `nome`
-- `2 notas de prova`
-- `1 nota de trabalho`
+### 5. 🎓 Student
+Implement a class `Student` with the following attributes:
+- `enrollment number`
+- `name`
+- `2 exam scores`
+- `1 assignment score`
 
-Métodos:
-- `media`: calcula a média final (peso das provas: 2,5; peso do trabalho: 2)
-- `final`: calcula quanto o aluno precisa para a prova final (retorna zero se não precisar)
+Methods:
+- `calculateAverage`: calculates the final average (exam weight: 2.5, assignment weight: 2)
+- `finalExam`: calculates the score needed for the final exam (returns zero if not required)
 
 ### 6. 🛒 Invoice
-Crie uma classe `Invoice` para representar uma fatura com os atributos:
-- `número do item`
-- `descrição do item`
-- `quantidade comprada`
-- `preço unitário`
+Create a class `Invoice` to represent an invoice with the following attributes:
+- `item number`
+- `item description`
+- `quantity purchased`
+- `price per item`
 
-Métodos:
-- `getters e setters`
-- `getInvoiceAmount`: calcula o valor total da fatura
+Methods:
+- `getters and setters`
+- `getInvoiceAmount`: calculates the total invoice amount
 
-### 7. 👷‍♂️ Funcionario
-Crie uma classe `Funcionario` com os atributos:
-- `primeiro nome`
-- `sobrenome`
-- `salário mensal`
+### 7. 👷‍♂️ Employee
+Create a class `Employee` with the following attributes:
+- `first name`
+- `last name`
+- `monthly salary`
 
-Métodos:
-- `getters e setters`
-- Se o salário não for positivo, configure-o como 0.0.
-- Crie um método para calcular o salário anual e aumentá-lo em 10%.
+Methods:
+- `getters and setters`
+- If the salary is not positive, set it to 0.0.
+- Create a method to calculate the annual salary and increase it by 10%.
 
-### 8. 📅 Data
-Escreva uma classe `Data` que representa uma data com os métodos:
-- `Construtor`: define a data, verifica sua validade
-- `Compara`: compara com outra data (retorna 0, 1 ou -1)
-- `GetDia`, `GetMes`, `GetAno`
-- `GetMesExtenso`: retorna o mês por extenso
-- `IsBissexto`: verifica se o ano é bissexto
-- `Clone`: clona a si próprio
+### 8. 📅 Date
+Write a class `Date` that represents a date with the following methods:
+- `Constructor`: sets the date, verifies its validity
+- `compare`: compares with another date object (returns 0, 1, or -1)
+- `getDay`, `getMonth`, `getYear`
+- `getMonthName`: returns the month name
+- `isLeapYear`: checks if the year is a leap year
+- `clone`: clones itself
 
-### 9. ✈️ Voo
-Crie uma classe `Voo` para representar um voo com os atributos:
-- `número do voo`
-- `data` (use a classe `Data`)
-- `100 passageiros` (máximo)
+### 9. ✈️ Flight
+Create a class `Flight` to represent a flight with the following attributes:
+- `flight number`
+- `date` (use the `Date` class)
+- `100 passengers` (maximum)
 
-Métodos:
-- `ProximoLivre`: retorna o próximo assento livre
-- `Verifica`: verifica se um assento está ocupado
-- `Ocupa`: ocupa um assento
-- `Vagas`: retorna o número de assentos disponíveis
-- `GetVoo`: retorna o número do voo
+Methods:
+- `nextFreeSeat`: returns the next available seat number
+- `checkSeat`: checks if a seat is occupied
+- `occupySeat`: occupies a seat and returns true if successful, false otherwise
+- `availableSeats`: returns the number of free seats
+- `getFlightNumber`: returns the flight number
 
-### 10. ⚽ Jogador de Futebol
-Crie uma classe `JogadorDeFutebol` com os atributos:
-- `nome`
-- `posição`
-- `data de nascimento`
-- `nacionalidade`
-- `altura`
-- `peso`
+### 10. ⚽ SoccerPlayer
+Create a class `SoccerPlayer` with the following attributes:
+- `name`
+- `position`
+- `birth date`
+- `nationality`
+- `height`
+- `weight`
 
-Métodos:
-- `getters e setters`
-- `imprimir`: imprime todos os dados do jogador
-- `calcularIdade`: calcula a idade
-- `aposentadoria`: calcula quanto tempo falta para o jogador se aposentar, baseado na posição.
+Methods:
+- `getters and setters`
+- `printDetails`: prints all the player’s details
+- `calculateAge`: calculates the player’s age
+- `retirementTime`: calculates the time left until retirement, based on the player’s position.
 
-### 11. 🎟️ Ingresso e IngressoVIP
-Implemente uma classe `Ingresso` com:
-- `valor`
+### 11. 🎟️ Ticket and VIP Ticket
+Implement a class `Ticket` with:
+- `price`
 
-Métodos:
-- `imprimirValor`
+Methods:
+- `printPrice`
 
-Crie uma classe `IngressoVIP`, que herda de `Ingresso` e possui:
-- `valor adicional`
+Create a class `VIPTicket`, which inherits from `Ticket` and has:
+- `additional price`
 
-Métodos:
-- `getValorVIP`: retorna o valor total do ingresso VIP
+Methods:
+- `getVIPPrice`: returns the total VIP ticket price
 
-### 12. 📖 Agenda
-Crie uma classe `Agenda` para armazenar até 10 pessoas. Métodos:
-- `armazenarPessoa(nome, idade, altura)`
-- `removerPessoa(nome)`
-- `buscarPessoa(nome)`: retorna a posição na agenda
-- `imprimirAgenda`: imprime todos os dados
-- `imprimirPessoa(index)`: imprime os dados da pessoa na posição `index`
+### 12. 📖 AddressBook
+Create a class `AddressBook` to store up to 10 people. Methods:
+- `storePerson(name, age, height)`
+- `removePerson(name)`
+- `findPerson(name)`: returns the position in the address book
+- `printAll`: prints all people’s details
+- `printPerson(index)`: prints the details of the person at position `index`
 
-### 13. ➕ Calculadora e Calculadora Científica
-Implemente uma classe `Calculadora` para operações básicas:
-- `soma`
-- `subtração`
-- `divisão`
-- `multiplicação`
+### 13. ➕ Calculator and Scientific Calculator
+Implement a class `Calculator` for basic operations:
+- `addition`
+- `subtraction`
+- `division`
+- `multiplication`
 
-Crie uma classe `CalculadoraCientifica` que herda de `Calculadora` e adiciona:
-- `raizQuadrada`
-- `potencia`
+Create a class `ScientificCalculator` that inherits from `Calculator` and adds:
+- `squareRoot`
+- `power`
 
-### 14. 💻 Fatura
-Crie uma classe `Fatura` para representar uma fatura com os atributos:
-- `número`
-- `descrição`
-- `quantidade`
-- `preço por item`
+### 14. 💻 Invoice
+Create a class `Invoice` to represent an invoice with the following attributes:
+- `number`
+- `description`
+- `quantity`
+- `price per item`
 
-Métodos:
-- `getTotalFatura`: calcula o valor total da fatura
+Methods:
+- `getTotalInvoice`: calculates the total invoice value
 
-### 15. 👨‍💼 Funcionário com Contador
-Crie uma classe `Funcionario` para representar um funcionário com os atributos:
-- `nome`
-- `sobrenome`
-- `salário mensal`
+### 15. 👨‍💼 Employee with Counter
+Create a class `Employee` to represent an employee with the following attributes:
+- `first name`
+- `last name`
+- `monthly salary`
 
-Adicione uma variável de classe para contar o número de funcionários.
+Add a class variable to count the number of employees.
 
-### 16. 🚗 Carro
-Desenvolva uma classe `Carro` para representar um carro com:
-- `tanque de combustível`: máximo de 50 litros
-- `consumo`: 15 km/litro
+### 16. 🚗 Car
+Develop a class `Car` to represent a car with:
+- `fuel tank`: maximum of 50 liters
+- `consumption`: 15 km/liter
 
-Métodos:
-- `abastecer`
-- `mover`
-- `getCombustivelRestante`
-- `getDistanciaPercorrida`
+Methods:
+- `refuel`
+- `move`
+- `getRemainingFuel`
+- `getDistanceTravelled`
 
-### 17. 📅 Agendamento de Compromissos
-Crie uma classe para gerenciar compromissos com atributos:
-- `tipo de compromisso`
-- `data`
-- `nome do participante`
-- `telefone`
+### 17. 📅 Appointment Scheduling
+Create a class to manage appointments with the following attributes:
+- `appointment type`
+- `date`
+- `participant name`
+- `phone number`
 
-Métodos:
-- `agendar`
-- `remover`
-- `alterar`
-- `exibir por participante`
-- `exibir por data`
+Methods:
+- `schedule`
+- `remove`
+- `modify`
+- `displayByParticipant`
+- `displayByDate`
